@@ -1,240 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>PHOTOSHOP</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alim Studio | Professional Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-	<nav>
-		<div class="logo">
-			ALIM<span>STUDIO</span>
-		</div>
-		<div class="menu">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Gallery</a>
-			<a href="#">Contact</a>
-		</div>
-		<div class="icon">
-			<i class="fa fa-search"></i>
-			<a href="ind.html">Login</a>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="#"><span class="logo-text">ALIM</span><span class="logo-highlight">STUDIO</span></a>
+                </div>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <div class="menu">
+                    <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                    <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="#services" class="nav-link"><i class="fas fa-camera"></i> Services</a>
+                    <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search photos...">
+                    </div>
+                    <a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="camera-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h1 class="hero-title">Capturing Moments That <span class="highlight">Captivate</span> Your Heart</h1>
+                <p class="hero-subtitle">Professional photography for weddings, fashion, nature, and special moments</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Search for photos, categories, or themes...">
+                    <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#gallery"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+    </header>
 
-		</div>
-	</nav>
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our <span>Portfolio</span></h2>
+                <p class="section-subtitle">Explore our stunning collection of photographs</p>
+            </div>
+            
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+                <ul class="filter-menu">
+                    <li class="filter active" data-filter="*">All Photos</li>
+                    <li class="filter" data-filter=".nature">Nature</li>
+                    <li class="filter" data-filter=".fashion">Fashion</li>
+                    <li class="filter" data-filter=".wedding">Wedding</li>
+                    <li class="filter" data-filter=".portrait">Portrait</li>
+                    <li class="filter" data-filter=".events">Events</li>
+                </ul>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Nature Images -->
+                <div class="portfolio-item nature" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_1.JPEG.jpg" alt="Nature Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Nature Beauty</h3>
+                                <p>Landscape Photography</p>
+                                <a href="img/IMG_1.JPEG.jpg" class="portfolio-view" title="View Image">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item nature" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_4.png" alt="Nature Scene">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Forest Path</h3>
+                                <p>Nature Photography</p>
+                                <a href="img/IMG_4.png" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fashion Images -->
+                <div class="portfolio-item fashion" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_2.png" alt="Fashion Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Fashion Shoot</h3>
+                                <p>Model Photography</p>
+                                <a href="img/IMG_2.png" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fashion" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_5.png" alt="Fashion Model">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Style Statement</h3>
+                                <p>Fashion Photography</p>
+                                <a href="img/IMG_5.png" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wedding Images -->
+                <div class="portfolio-item wedding" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_3.jpg" alt="Wedding Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Wedding Day</h3>
+                                <p>Couple Photography</p>
+                                <a href="img/IMG_3.jpg" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item wedding" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_7.jpg" alt="Wedding Ceremony">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Beautiful Moments</h3>
+                                <p>Wedding Photography</p>
+                                <a href="img/IMG_7.jpg" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more images with similar structure -->
+                <div class="portfolio-item portrait" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_6.png" alt="Portrait">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Portrait Session</h3>
+                                <p>Studio Photography</p>
+                                <a href="img/IMG_6.png" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item events" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="portfolio-img">
+                        <img src="img/IMG_9.jpg" alt="Event">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Special Event</h3>
+                                <p>Event Photography</p>
+                                <a href="img/IMG_9.jpg" class="portfolio-view">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more" data-aos="fade-up">
+                <button class="btn-load"><i class="fas fa-sync-alt"></i> Load More Photos</button>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="img/ALI.png" alt="Alim Sayyad - Photographer">
+                    <div class="experience-badge">
+                        <span>5+ Years</span>
+                        <p>Experience</p>
+                    </div>
+                </div>
+                
+                <div class="about-info" data-aos="fade-left">
+                    <h2 class="section-title">About <span>Me</span></h2>
+                    <h3>Professional Photographer Based in Maharashtra</h3>
+                    <p>Hello! I'm <strong>Alim Sayyad</strong>, a passionate photographer with over 5 years of experience capturing beautiful moments. I specialize in wedding, fashion, portrait, and nature photography.</p>
+                    
+                    <p>My philosophy is simple: every moment tells a story, and my job is to capture that story in the most beautiful way possible. From intimate weddings to grand fashion shoots, I approach every project with creativity and attention to detail.</p>
+                    
+                    <div class="about-skills">
+                        <div class="skill">
+                            <h4>Wedding Photography <span>95%</span></h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <h4>Fashion Photography <span>90%</span></h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <h4>Portrait Photography <span>92%</span></h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-primary"><i class="fas fa-calendar-alt"></i> Book a Session</a>
+                        <a href="#" class="btn-secondary"><i class="fas fa-download"></i> Download Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<section class="h-text">
-		<i class="fa fa-camera" id="camera"></i>
-		<h1 data-aos="zoom-in-down" data-aos-delay="100">Capturing the moments that captivate your heart.</h1>
-		<input type="text" name="" placeholder="Search here...">
-		<button><i class="fa fa-search"></i></button>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our <span>Services</span></h2>
+                <p class="section-subtitle">Professional photography services for all occasions</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Capture your special day with beautiful, timeless photographs that tell your love story.</p>
+                    <a href="#" class="service-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Fashion Photography</h3>
+                    <p>Professional fashion shoots for brands, models, and personal portfolios.</p>
+                    <a href="#" class="service-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Nature Photography</h3>
+                    <p>Stunning landscape and wildlife photography that captures nature's beauty.</p>
+                    <a href="#" class="service-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Portrait Photography</h3>
+                    <p>Professional portrait sessions for individuals, families, and professionals.</p>
+                    <a href="#" class="service-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		
-	</section>
-</header>
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Client <span>Testimonials</span></h2>
+                <p class="section-subtitle">What our clients say about our work</p>
+            </div>
+            
+            <div class="testimonials" data-aos="zoom-in">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Alim captured our wedding day perfectly! Every photo tells a story and brings back beautiful memories. Highly recommended!"</p>
+                    </div>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Wedding Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="filter-gallery">
-	<div class="portfolio-menu">
-			<ul>
-				<li class="filter active" data-filter="*"> All</li>
-				<li class="filter" data-filter=".web"> Nature</li>
-				<li class="filter" data-filter=".seo">Faishon</li>
-				<li class="filter" data-filter=".graphics">Wedding</li>
-			</ul>
-		</div>
-		<div class="portfolio-item">
-			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/IMG_1.JPEG.jpg" width="160" height="160">
-			</div>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="section-title">Get In <span>Touch</span></h2>
+                    <p>Ready to capture your special moments? Contact me for a consultation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Maharashtra, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>+91 9309599402</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>contact@alimstudio.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100035425191579" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sharrriiffff" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/+919309599402" target="_blank" class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<div class="item seo"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/IMG_2.png" width="160" height="160">
-			</div>
-			<div class="item graphics"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_3.jpg" width="100" height="100">
-			</div>
-			<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/IMG_4.png" width="100" height="100">
-			</div>
+    <!-- Footer -->
+    <footer>
+        <div class="newsletter" data-aos="fade-up">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-info">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get updates on new photos, special offers, and photography tips.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">ALIM<span>STUDIO</span></div>
+                        <p>Professional photography studio specializing in wedding, fashion, and portrait photography based in Maharashtra.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Wedding Photography</a></li>
+                            <li><a href="#">Fashion Photography</a></li>
+                            <li><a href="#">Nature Photography</a></li>
+                            <li><a href="#">Portrait Photography</a></li>
+                            <li><a href="#">Event Photography</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Maharashtra, India</li>
+                            <li><i class="fas fa-phone-alt"></i> +91 9309599402</li>
+                            <li><i class="fas fa-envelope"></i> contact@alimstudio.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Alim Studio. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> by Alim Sayyad</p>
+            </div>
+        </div>
+    </footer>
 
-			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/IMG_5.png" width="100" height="100">
-			</div>
-			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_6.png" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/IMG_7.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/IMG_9.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_10.png" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_11.png" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_12.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_13.JPEG.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_14.png" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_15.png" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/IMG_16.png" width="100" height="100">
-			</div>
-			
-		</div>
-	
-</section>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-
-<!--- filter gallery end---->
-
-<!-- slider start--->
-
-<section class="members">
-		<div class="member-info"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
-			<h1>Our <span>My Information</span></h1>
-	<!-- <p>What our member says</p> -->
-</div>
-
-
-<div class="member-card"  data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300">
-	
-
-	<img src="img\ALI.png">
-	<p>
- 			From Maharashtra,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.From Maharashtra,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.
-	</p>
-	<h2>* Alim Sayyad</h2>
-
-	<a href="https://www.facebook.com/profile.php?id=100035425191579&mibextid=LQQJ4d" target="_blank"><img src="img/icon1.png" width="100"></a>
-	<a href="https://www.instagram.com/sharrriiffff?igsh=ZHF3ZGx2eDNtaXVm&utm_soure=qr" target="_blank"><img src="img/icon2.png" width="100"></a>
-	<a href="https://wa.me/qr/V3DYEMZXU4DCA1" target="_blank"><img src="img/icon3.png" width="100"></a>
-	<img src="img/icon4.png" width="100">
-</div>
-<div class="m-images"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
-	<img src="img/A1.jpg">
-	<img src="img/A2.jpg">
-	<img src="img/A3.jpg">
-	<img src="img/A4.jpg">
-	<img src="img/IMG-5425.webp">
-	<img src="img/A6.jpg">
-	<img src="img/IMG_5889.jpg">
-	
-
-</div>
-</section>
-
-
-
-<!--  footer-->
-
-<footer>
-	<div class="newsletter">
-		<div data-aos="fade-up" data-aos-offset="200">
-			<h2>Subscribe </h2>
-			<p>We're a team of non-cynics who truly care for our work.</p>
-		</div>
-		<div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
-			<label>
-				<input type="text" name="" placeholder="Enter your email">
-				<button>Subscribe</button>
-
-			</label>
-		</div>
-	</div>	
-
-
-	<div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
-		<div>
-			<h1>Information</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur elit. Nihil sit dicta.</p>
-			
-			<a href="https://wa.me/+91 9309599402"target="_blank"><i class="fa fa-whatsapp"></i></a>
-			<a href="https://www.instagram.com/sharrriiffff?igsh=ZHF3ZGx2eDNtaXVm&utm_soure=qr" target="_blank"><i class="fa fa-instagram"></i></a>
-			<i class="fa fa-telegram"></i>
-			<i class="fa fa-twitter"></i>
-		</div>
-
-
-		<div>
-			<h1>Useful links</h1>
-			<p>About us</p>
-			<p>Gallery</p>
-			<p>Blog posts</p>
-			<p>Pricing plans</p>
-
-		</div>
-
-		<div>
-			<h1>Details</h1>
-			<p>Photographers</p>
-			<p>Gallery</p>
-			<p>About</p>
-			<p>Pricing plans</p>
-
-		</div>
-
-		<div>
-			<h1>Help & Support</h1>
-			<p>Privacy policy</p>
-			<p>Term & conditions</p>
-			<p>Technical support</p>
-			<p>Customer care</p>
-
-		</div>
-	</div>
-</footer>
-
-
-
-
-
-
-
-<!-- SCRIPT START HERE... -->
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script>
-	$('.portfolio-item').isotope({
-  // options
-  itemSelector: '.item',
-  layoutMode: 'fitRows'
-});
-		$('.portfolio-menu ul li').click(function(){
-		$('.portfolio-menu ul li').removeClass('active');
-		$(this).addClass('active');
-
-			var selector = $(this).attr('data-filter');
-		$('.portfolio-item').isotope({
-			filter:selector
-		});
-		return false;
-	});
-</script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-
-</script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
